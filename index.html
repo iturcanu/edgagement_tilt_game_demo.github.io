@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Head Tilt Game</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Include MediaPipe libraries directly -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="game-container">
+    <video id="video" autoplay muted playsinline></video>
+    <div id="question" class="question">Loading...</div>
+    <div id="leftOption" class="answer left">Left Option</div>
+    <div id="rightOption" class="answer right">Right Option</div>
+</div>
+<!-- Change to a regular script, not a module -->
+<script src="script.js"></script>
+</body>
+</html>
